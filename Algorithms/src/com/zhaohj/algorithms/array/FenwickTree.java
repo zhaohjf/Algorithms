@@ -23,8 +23,8 @@ public class FenwickTree {
 	 * k += k&-k;
 	 * 在数组a中添加一个位置为k的元素：
 	 * 在C数组中相当于在k位置，以及k加上k的lowbit位置上累加上这个元素的值
-	 * @param k
-	 * @param num
+	 * @param k 相当于数组A中的元素的位置
+	 * @param num 元素的值
 	 */
 	public void add(int k, int num) {
 		while (k <= n) {
