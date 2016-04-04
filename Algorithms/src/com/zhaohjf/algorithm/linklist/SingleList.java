@@ -44,7 +44,7 @@ public class SingleList {
 		Node p = head.next;
 		for (int i = 0; i < size; i++) {
 			if (p.next == null) {
-				p.next = head;
+				p.next = head.next;
 			}
 			p = p.next;
 		}
